@@ -1,0 +1,278 @@
+.col-white {
+    color: #FFF;
+}
+
+.col-black {
+    color: #000;
+}
+
+.col-gray {
+    color: rgb(135, 135, 135)
+}
+
+.col-red {
+    color: rgb(255, 50, 50)
+}
+
+.col-blue {
+    color: rgb(87, 97, 194)
+}
+
+.col-green {
+    color: rgb(0, 180, 125);
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255)
+}
+
+.bg-red {
+    background-color: rgb(255, 50, 50);
+}
+
+.section {
+    border-top: 1px solid rgb(240,240,240);
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 50, 50);
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(255, 50, 50);
+}
+
+footer a {
+    color: rgb(135, 135, 135);
+    text-decoration: underline;
+    margin-left: 1.5em;
+}
+
+footer a:visited {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(255, 50, 50);
+}
+
+footer a:active {
+    text-decoration: none;
+    color: rgb(255, 50, 50);
+}
+
+.py-big {
+    padding: 5em 0;
+}
+
+.action {
+    border: 1px solid rgb(240,240,240);
+    border-left: none;
+    border-right: none;
+    padding: 1em 0;
+}
+
+.font-small {
+    font-size: 0.9em;
+}
+
+.font-medium {
+    font-size: 1.2em;
+}
+
+.section-travel{
+    width:100%;
+    height:80vh;
+    background: url(../assets/images/bk.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    display:block;
+    z-index:-1;
+    position: relative;
+}
+
+.text-shadow-1 {
+    text-shadow: rgba(0,0,0,0.3) 0px 3px 8px;
+}
+
+.vertical-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mark-line {
+    width: 3em;
+    height: 5px;
+    background-color: rgb(255, 50, 50);
+}
+
+.travel-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.badge-star {
+    padding: 2px 4px;
+    background: rgb(0, 180, 125);
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.ml-small {
+    margin-left: 1px;
+}
+
+#map {
+    height: 80vh;
+}
+
+.map-marker {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.section-intro{
+    width:100%;
+    height:100vh;
+    background: url(../assets/images/bk1.jpg);
+    background-size: cover; 
+    display:block;
+    position: relative;
+}
+
+.hexagon1{
+    position: relative;
+    display:block;
+    background: transparent;
+    width:150px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    font-size:.80em;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:20px auto;
+}
+
+.hexagon1:before, .hexagon1:after {
+    width:150px;
+    left: 0;
+    height:22px;
+    z-index: 0;
+}
+
+.hexagon1:before{
+    position: absolute;
+    content: '';
+    border-bottom: none!important;
+    -webkit-transform: perspective(20px) rotateX(10deg);
+    -moz-transform: perspective(20px) rotateX(10deg);
+    transform: perspective(20px) rotateX(10deg);
+}
+.hexagon1:after{
+    position: absolute;
+    top: 23px;
+    content: '';
+    border-top: none!important;
+    -webkit-transform: perspective(20px) rotateX(-10deg);
+    -moz-transform: perspective(20px) rotateX(-10deg);
+    transform: perspective(20px) rotateX(-10deg);
+}
+
+#main-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 90px;
+    border-bottom: 1px solid #FFFFFF40;
+    z-index: 1;
+    background: none;
+    transition: all 0.5s ease;
+}
+
+#main-menu.active{
+    border-bottom: none;
+    height: 60px;
+    background: #FFF;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#main-menu ul {
+    margin: 0;
+    padding: 0;
+    display: table;
+    height: 100%;
+}
+
+#main-menu li {
+    display: table-cell;
+    color: white;
+    list-style: none;
+    padding: 1em;
+    vertical-align: middle;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+}
+
+#main-menu.active li {
+    color: black;
+}
+
+#main-menu.active li.active-hidden {
+    display: none;
+}
+
+#main-menu li.active-show {
+    display: none;
+}
+
+#main-menu.active li.active-show {
+    display: table-cell;
+}
+
+#main-menu .left-menu li {
+    cursor: pointer;
+}
+
+#main-menu .left-menu li:hover {
+    color: rgb(255, 50, 50);
+}
+
+#main-menu .left-menu li:after {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main-menu .right-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#main-menu li.button {
+    cursor: pointer;
+}
+
+.gm-style .gm-style-iw > button {
+    display: none; /* <-- this will generally work on the fly. */
+    visibility: hidden; /* this 2 lines below are just for hard hiding. :) */
+    opacity: 0;
+}

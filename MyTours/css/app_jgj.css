@@ -1,0 +1,222 @@
+.btn-square {
+    border-radius: 0!important;
+}
+.btn-transparent {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 1px rgb(230, 230, 230);
+}
+.btn-transparent:hover {
+    background-color: rgb(214, 214, 214) !important;
+}
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+    padding: 4rem 2rem 2rem 2rem;
+    margin-bottom: 1rem;
+}
+.blog-item.item-1 {
+    background-image: url("../assets/images/bk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog-item p.content {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+img.fit-width {
+    width: 100%;
+    height: auto;
+}
+.city-detail {
+    padding: 3rem;
+}
+.city-detail .profile>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.city-detail .content {
+    margin: 2rem 0;
+    border-left: solid 2px red;
+    padding-left: 1em;
+}
+.city-detail .content p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+.city-detail .content p>a {
+    text-decoration: underline;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+}
+.city-detail .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city-detail .action img {
+    height: 60px;
+    width: auto;
+}
+
+/*page 9*/
+.city-detail .items {
+
+}
+.city-detail .items>.item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.page-8-bg {
+    background-image: url("../assets/images/bk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-item {
+    border-top: solid 1px rgb(240,240,240);
+    border-bottom: solid 1px rgb(240,240,240);
+    display: flex;
+    padding: 1.3rem 0;
+}
+.article-item img {
+    height: 100%;
+    width: 200px;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+/*page 10*/
+.diamond-list {
+    position: relative;
+}
+.diamond-list .item>.line {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    background: red;
+}
+.diamond-list .item {
+    margin-bottom: 3rem;
+}
+.diamond-list .item:last-child {
+    margin-bottom: 0;
+}
+.diamond-list .diamond-wrap {
+    position: relative;
+}
+.diamond-list .diamond-wrap span{
+    position: absolute;
+    top: 16%;
+    left: 41%;
+    z-index: 3;
+}
+.diamond-list .item .diamond{
+    width: 40px;
+    height: 40px;
+    border: solid 2px red;
+    transform: rotate(-225deg);
+    background: white;
+    z-index: 2;
+}
+.diamond-list .item .diamond:after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    z-index: -1;
+    left: 31px;
+    /* height: 5px; */
+    width: 50px;
+    /* border-bottom-width: 5px; */
+    border-top: solid 2px red;
+    transform: rotate(-45deg);
+}
+.diamond-list .item:last-child .diamond:after {
+    content: "";
+    display: none;
+}
+/* General Button Style */
+.hexagon{
+    position: relative;
+    display:block;
+    background: transparent;
+    width:100px;
+    height:38px;
+    line-height:32px;
+    text-align:center;
+    font-size:0.6em;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:20px auto;
+}
+.hexagon:before, .hexagon:after {
+    width:100px;
+    left: 0;
+    height:15px;
+    z-index: 0;
+}
+.white{ color: white; }
+/* Button Border Style */
+.white:before,.white:after {
+    border: 1px solid white;
+}
+
+.hexagon:before{
+    position: absolute;
+    content: '';
+    border-bottom: none;
+    -webkit-transform: perspective(15px) rotateX(10deg);
+    -moz-transform: perspective(15px) rotateX(10deg);
+    transform: perspective(15px) rotateX(10deg);
+}
+.hexagon:after{
+    position: absolute;
+    top: 16px;
+    content: '';
+    border-top: none;
+    -webkit-transform: perspective(15px) rotateX(-10deg);
+    -moz-transform: perspective(15px) rotateX(-10deg);
+    transform: perspective(15px) rotateX(-10deg);
+}
+
+/* Button Hover Style */
+.white:hover:before, .white:hover:after {
+    /*background: white;*/
+}
+
+.hexagon:hover{
+    color:red;
+    text-decoration: none;
+}
+#scrollToTop {
+    font-size: 1.3em;
+    color: rgb(87, 97, 194);
+    position: fixed;
+    right: 2%;
+    background-color: white;
+    bottom: 6%;
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 2px rgb(87, 97, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scrollToTop i {
+   line-height: 45px;
+}
+#scrollToTop:hover{
+    background: rgb(87, 97, 194);
+    color: white;
+    text-decoration: none;
+}
